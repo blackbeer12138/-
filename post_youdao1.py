@@ -4,18 +4,18 @@ url = "http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule"
 
 
 def get_salt():
-  s=str(random.randint(0,10))
-  t=get_ts()
-
-  return '15846844488375'
+   return '15867812304692'
 
 
 def get_sign():
-  return '51a801838d8e15397ff4f501'
+  return 'fb8c9ef0986f63434368a414e2ca90e8 '
 
 
 def get_ts():
-  return
+  import time
+  t = time.time()
+  ts = str(int(round(t * 1000)))
+  return ts
 
 
 from_data = {
